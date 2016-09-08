@@ -80,3 +80,6 @@ To run the lint command
  cd examples
  node server.js
 ```
+## Implementation details
+The implementation contains one user facing components that acts as the API and has state and one internal component that has not state and recursively paints the tree.
+The state has the expanded/collapsed state for the nodes.

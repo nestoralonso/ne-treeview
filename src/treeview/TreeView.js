@@ -39,7 +39,7 @@ class TreeView extends Component {
 
   render() {
     return (
-      <ul className="node-view__root">
+      <ul className="node-view__root" style={this.props.style}>
         <NodeView
           node={this.props.root}
           path={[0]}
@@ -55,7 +55,8 @@ TreeView.propTypes = {
   root: PropTypes.shape({
     label: PropTypes.string,
     items: PropTypes.array
-  }).isRequired
+  }).isRequired,
+  style: PropTypes.object
 };
 
 export default TreeView;

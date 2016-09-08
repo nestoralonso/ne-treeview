@@ -1,0 +1,22 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# production
+es6
+lib
+umd
+
+# misc
+.DS_Store
+npm-debug.log
+
+# my files
+.editorconfig
+.vscode
+.idea
+
+.ref
+jsconfig.json
+

@@ -1,0 +1,32 @@
+.node-view__root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.node-view__root ul {
+  padding-left: 1rem;
+}
+
+.node-view__folder-ctrl {
+  cursor: pointer;
+}
+
+.node-view__file-icon {
+  margin-left: 0.8em;
+}
+
+.node-view__node {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.node-view__node .glyphicon {
+  display: block;
+  float: left;
+  margin-right: 0.4em;
+}
+
+

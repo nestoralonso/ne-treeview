@@ -54,5 +54,8 @@
   "keywords": [
     "react",
     "react-component"  
-  ]
+  ],
+  "engines": {
+    "node": ">=4"
+  }
 }

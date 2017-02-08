@@ -53,7 +53,7 @@ ReactDOM.render(
 ```
 
 ## Styling
-The styles contained in [ne-treeview.css](./ne-treeview.css) must be loaded globally via a link tag, also the bootstrap 3 stylesheet must be present 
+The styles contained in [ne-treeview.css](./ne-treeview.css) must be loaded globally via a link tag, also the bootstrap 3 stylesheet must be present
 
 ```html
 <link rel="stylesheet" type="text/css" href="/your-styles/ne-treeview.css">
@@ -81,5 +81,5 @@ To run the lint command
  node server.js
 ```
 ## Implementation details
-The implementation contains one user facing components that acts as the API and has state and one internal component that has not state and recursively paints the tree.
-The state has the expanded/collapsed state for the nodes.
+The implementation contains one public stateful component TreeView that acts as the API. Internally has a stateless component that recursively renders itself to render the complete tree.
+TreeView has the expanded/collapsed state for the nodes so it can remember the state of each node even after the parent node has been collapsed.

@@ -1,5 +1,4 @@
-var webpack = require('webpack');
-var path = require('path');
+let webpack = require('webpack');
 
 module.exports = {
   devtool: 'sourcemap',

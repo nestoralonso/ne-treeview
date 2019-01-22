@@ -10,9 +10,11 @@ module.exports = {
     libraryTarget: 'umd'
   },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.(js|jsx)/, exclude: /node_modules/, loader: 'babel'
+        test: /\.(js|jsx)/, exclude: /node_modules/, use: [{
+          loader: 'babel-loader'
+        }]
       }
     ]
   },

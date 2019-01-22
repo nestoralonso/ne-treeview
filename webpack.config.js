@@ -7,8 +7,10 @@ module.exports = {
     index: './src/index.js'
   },
   output: {    
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'lib'),
+    library: 'NeTreeView',
+    libraryTarget: 'umd',
+    filename: 'ne-treeview.js'
   },
   module: {
     rules: [

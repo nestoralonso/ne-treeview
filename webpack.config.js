@@ -1,13 +1,14 @@
 let webpack = require('webpack');
+let path = require('path');
 
 module.exports = {
   devtool: 'sourcemap',
   entry: {
     index: './src/index.js'
   },
-  output: {
-    library: 'NeTreeView',
-    libraryTarget: 'umd'
+  output: {    
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -19,10 +20,9 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['.js', '.jsx']
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })

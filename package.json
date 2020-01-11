@@ -13,7 +13,7 @@
   "main": "lib/index",
   "jsnext:main": "es6/index",
   "scripts": {
-    "build": "npm run build-cjs && npm run build-es",
+    "build": "npm run build-cjs && npm run build-es && npm run build-umd",
     "lint": "eslint --fix --ignore-path=.gitignore .",
     "build-umd": "cross-env BABEL_ENV=development webpack",
     "build-cjs": "rimraf lib && cross-env BABEL_ENV=cjs babel ./src/ -d lib --ignore '__tests__'",
